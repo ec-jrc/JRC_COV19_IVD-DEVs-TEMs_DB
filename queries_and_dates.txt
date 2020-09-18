@@ -1,0 +1,20 @@
+Downloaded 20200507
+
+scopus_advanced search
+
+( TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nov" ) )  AND  ( immuno )  
+scopus_1.csv
+
+( TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nCoV" ) )  AND  ( detection )   
+scopus_2.csv
+
+
+
+europepmc.org
+(“2019-nCoV” OR “COVID-19” OR “SARS-CoV-2") AND (immuno*) AND (polymerase*) AND (detection OR diagnos*) AND (FIRST_PDATE:2020)
+europepmc_01.csv
+
+medrxiv
+https://connect.biorxiv.org/relate/collection_json.php?grp=181
+collection_json.json
+
