@@ -1,4 +1,0 @@
-collection_json.json
-europepmc_01.csv
-scopus_01.csv
-scopus_02.csv
