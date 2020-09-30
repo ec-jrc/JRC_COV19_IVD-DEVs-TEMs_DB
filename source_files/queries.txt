@@ -1,0 +1,32 @@
+####Scopus
+
+TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nCov" )   AND  ( immuno )
+scopus_01.csv
+
+TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nCoV" )  AND  ( detection )  AND  (  LIMIT-TO ( ACCESSTYPE(OA) ) )  AND  ( LIMIT-TO ( DOCTYPE ,  "ar" ) )  AND  ( LIMIT-TO ( SUBJAREA ,  "MEDI" ) )  
+scopus_02.csv
+
+TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nCoV" )  AND  ( detection )  AND  ( EXCLUDE ( DOCTYPE ,  "ar" ) )  
+scopus_03.csv
+
+TITLE-ABS-KEY ( covid  OR  "sars-cov-2"  OR  "2019-nCoV" )  AND  ( detection )  AND  ( EXCLUDE ( SUBJAREA ,  "MEDI" ) )  
+scopus_04.csv
+
+
+####europepmc.org
+
+(“2019-nCoV” OR “COVID-19” OR “SARS-CoV-2") AND (immuno*) AND (polymerase*) AND (detection OR diagnos*) AND (FIRST_PDATE:2020)
+europepmc_01.csv
+
+
+####medrxiv
+GET DOWNLOADED from biorxiv API
+wget https://api.biorxiv.org/covid19/0/json -O 0.json
+.
+.
+.
+.
+wget https://api.biorxiv.org/covid19/290/json -O 290.json
+
+and merge them. See jupyter notebook: biorxiv.ipnyb
+
